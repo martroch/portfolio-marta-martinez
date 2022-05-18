@@ -1,3 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,700;1,600&display=swap');
+@font-face {
+  src:
+      url('../public/typography/PPPangramSans-CompressedExtrabold.otf');
+      
+      font-family: 'PP Pangram Sans CompressExtrabold';
+      font-style: normal;
+      font-weight: 800;
+    }
+@font-face {
+    src:
+      url('../public/typography/PPPangramSans-NarrowExtraboldItalic.otf');
+        
+      font-family: 'PP Pangram Sans NarrowExtrabolItalic';
+      font-style: italic;
+      font-weight: 800;
+      }
+
+      @font-face {
+        src:
+          url('../public/typography/PPPangramSans-NarrowSemibold.otf');
+
+          font-family: 'PP Pangram Sans NarrowSemibold';
+          font-style: italic;
+          font-weight: 600;
+          }
+    
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

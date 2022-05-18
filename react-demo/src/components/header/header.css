@@ -3,6 +3,9 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    background-color: black;
 }
 
-.menu__item{color:red;}
+.nav-bar{
+    cursor: pointer;
+}

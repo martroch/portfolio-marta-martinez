@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Route, Routes } from 'react-router-dom';
+import './nav.css';
 
 export default function Nav() {
 return <nav className='menu' id="menu">

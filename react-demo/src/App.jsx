@@ -8,6 +8,7 @@ import Graphic from './pages/graphic/Graphic'
 import Product from './pages/product/Product'
 import NoMatch from './pages/nomatch/NoMatch'
 import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
       <Route path="*" element={<NoMatch />} />
       </Routes>
     </main>
-    <footer></footer>
+    <Footer></Footer>
 </>;
   
 }
