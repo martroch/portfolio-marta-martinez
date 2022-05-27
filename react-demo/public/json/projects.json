@@ -1,0 +1,43 @@
+[
+    {
+    
+    "id": "f1",
+    "name": "All nature app",
+    "filter":"Digital design",
+    "sub-name": "Website to promote the app all nature ",
+    "goals": "Create a web page that communicates the values of the app all nature (relaxation application that stands out for its immersive 360º videos) seeks to get subscriptions and downloads",
+    "conclusion":"After conducting a study of the target audience and the competition, it was concluded that the colors, videos and fonts should convey peace of mind, which they do",
+    "languages":"HTML 5 SCSS JS",
+    "tools": "Figma Miroo",
+    "link-web": "https://frontend.esatid3-2021.com/marta-beta/",
+    "link-code": "https://github.com/martroch/all-nature-app",
+    "img1":"images/all-nature-app.jpg",
+    "img-2":"images/all-nature-app-1.jpg",
+    "video":"videos/all-nature-app-web.jpg",
+    "how":"To get to the final design I made: PDR, User Flow, Discovery,  Benchmark, User Persona, Site Map and Low and Hight Wireframes",
+    "img-4":"images/all-nature-app-design-1.jpg",
+    "img-5":"images/all-nature-app-design-2.jpg",
+    "img-6":"images/all-nature-app-design-3.jpg"
+            
+    },
+    {
+    "id": "Alfilpack",
+    "name": "Alfilpack",
+    "filter":" Inteiro design",
+    "sub-name": "CAD / 3D / RENDERING ",
+    "description": "Conceptualization of space with interior design, custom furniture, signage design and lighting. With an exclusive design on the ceiling with backlit cardboard slats and furniture design in oak wood and black metal combined with blue upholstery.",
+    "services":"CAD 3D Rendering Furniture design Signage",
+    "working":"Project done while working at Portega Estudio Creativo ",
+    "description-2": "Furniture Design Multifunctional piece of furniture, consisting of office space storage lockers, relax area and reprographics.  Long table with eight operative workplaces",
+    "link-web": "https://frontend.esatid3-2021.com/marta-beta/",
+    "link-code": "https://github.com/martroch/all-nature-app",
+    "img-1":"images/alfilpack.jpg",
+    "img-2":"images/alfilpack-1.jpg",
+    "img-3":"images/alfilpack-2.jpg",
+    "img-4":"images/alfilpack-3.jpg",
+    "img-5":"images/alfilpack-design-1.jpg",
+    "img-6":"images/alfilpack-tdesign-2.jpg",
+    "img-7":"images/alfilpack-design-3.jpg"
+
+    }
+]

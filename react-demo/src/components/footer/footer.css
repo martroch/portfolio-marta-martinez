@@ -23,6 +23,7 @@
     font-family: 'Familjen Grotesk';
     font-size: 30px;
     font-weight: 400;
+    padding-bottom: 12px;
     
 
 }
@@ -34,4 +35,5 @@
     font-size: 12px;
     text-align: right;
     font-weight: 400;
+    padding-top: 12px;
 }

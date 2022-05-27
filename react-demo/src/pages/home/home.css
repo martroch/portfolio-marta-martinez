@@ -1,0 +1,20 @@
+.container:first-child { 
+    height: 3000px;
+    background: var(--color-white);
+}
+
+.container {
+    background: yellow;
+    height: 3000px;
+}
+.center {
+    width: 200px;
+    height: 200px;
+    background-image: url('../../../public/images/projects.gif');
+    position: fixed;
+    left: 0; 
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}

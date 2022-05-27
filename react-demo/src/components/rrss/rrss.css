@@ -1,0 +1,8 @@
+.rrss{
+    display: flex;
+    flex-direction: row;
+    margin-top: var(--space-m);
+    z-index: 99;
+    gap: var(--space-xs);
+    
+}
