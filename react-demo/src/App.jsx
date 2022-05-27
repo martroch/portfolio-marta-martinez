@@ -3,12 +3,12 @@ import './App.css';
 import { Link, Route, Routes } from 'react-router-dom';
 import Home from './pages/home/Home'
 import About from './pages/about/About'
-import Digital from './pages/digital/Digital'
-import Graphic from './pages/graphic/Graphic'
-import Product from './pages/product/Product'
+import Projects from './pages/projects/Projects'
+import Project from './pages/single-project/SingleProject'
 import NoMatch from './pages/nomatch/NoMatch'
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
+
 
 
 function App() {
@@ -19,9 +19,8 @@ function App() {
       <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/about" element={<About />} />
-      <Route path="/digital-design" element={<Digital />} />
-      <Route path="/graphic-design" element={<Graphic />} />
-      <Route path="/product-design" element={<Product />} />
+      <Route path='/:category' element={<Projects/>}/>
+      <Route path='/:category/:id' element={<Project/>}/>
       <Route path="*" element={<NoMatch />} />
       </Routes>
     </main>

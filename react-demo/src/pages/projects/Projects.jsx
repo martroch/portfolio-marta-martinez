@@ -1,5 +1,5 @@
 import React from 'react';
-import GetWorks from '../../components/digital-project/DigitalProject';
+import GetWorks from '../../components/cards/Cards';
 
 export default function 
 Digital() { return (<>

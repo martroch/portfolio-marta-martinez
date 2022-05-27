@@ -5,21 +5,21 @@ import { Link } from 'react-router-dom';
 
 
 function GetWorks(){
-    const [projects, setProjects] = useState([]);
+    const [cards, setCards] = useState([]);
     
     useEffect(() => {
         axios.get('json/projects.json')
-    .then(response => setProjects(response.data));
+    .then(response => setCards(response.data.filter(element => element.category == 'digital')));
     }, [])
 
-    console.log(projects)
+    console.log(cards)
     
     return (
         <>
         <section>
-        {projects.map(project => (<>
-            <Link to={project.id}>
-                <p key={project.name}>{ project.name }</p>
+        {cards.map(card => (<>
+            <Link to={card.id}>
+                <img src={card.img1} alt=""/>
             </Link>
         </>))}
         </section>
