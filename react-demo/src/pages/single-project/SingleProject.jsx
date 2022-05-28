@@ -16,26 +16,52 @@ Project() {
     
     return (
         <>
-        
-        <h1>single project</h1>
         <section>
         {content.map(info => (<>
-            <section>
+            <section className='b-color'>
                 <h3 key={info.top_name}>{info.top_name}</h3>
                 <h1 key={info.name}>{info.name}</h1>
                 <h3 key={info.sub_name}>{info.sub_name}</h3>
-                <img src={info.img1} alt="" />
+                <img width="900px" src={info.img1} alt="" className='top-img'/>
             </section>
             <div className='text-info'>
-                <div>
+                <div className='info-1'>
                     <h4>GOALS</h4>
                     <p key={info.goals}>{info.goals}</p>
                 </div>
-                <div>
+                <div className='info-2'>
                 <h4>CONCLUSION</h4>
                 <p key={info.conclusion}>{info.conclusion}</p>
                 </div>
             </div>
+            <div className='text-info'>
+                <img src={info.img2} alt="" />
+                <div>
+                    <h4>TOOLS</h4>
+                    <ul><li>{info.tools}</li></ul>
+                    <p>{info.work}</p>
+                </div>
+            </div>
+            <img className='text-info' src={info.img3} alt="" />
+            <img className='text-info' src={info.img4} alt="" />
+            <video>  
+            <source src={info.video} type="video/mp4">
+            </source>
+            </video>
+            <div className='text-info'>
+                <img src={info.img5} alt="" className='img-square'/>
+                <div className='how'>
+                <h4>DISCOVER HOW DO I GET TO</h4>
+                <p>{info.how}</p>
+                </div>
+            </div>
+            <div className='text-info'>
+                <img src={info.img6} alt="" className='img-square'/>
+                <img src={info.img7} alt="" className='img-square'/>
+            </div>
+
+
+
 
 
         </>))}

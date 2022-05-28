@@ -50,12 +50,33 @@ a{
 h1{
   font-family: 'PP Pangram Sans CompressExtrabold';
   font-size: 90px;
+  text-transform: uppercase;
 }
+
+h3{
+  font-family: 'Familjen Grotesk';
+  font-size: 24px;
+  text-transform: uppercase;
+  width: regular;
+}
+
+h4{
+  font-family: 'Familjen Grotesk';
+  font-size: 18px;
+  text-transform: uppercase;
+  width: 800;
+
+}
+
+
 /* Variables */
 :root {
   /* colors */
 --color-black: #1A1D19;
 --color-white: #FFFFFF;
+--color-yellow: #FFEEC1;
+--color-pink: #FADDEC;
+--color-blue: #A3D7E8;
 /* spaces */
 --space: 6px;
 --space-xs: 12px;
