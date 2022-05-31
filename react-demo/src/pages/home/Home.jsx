@@ -1,9 +1,8 @@
 import React from 'react';
 import './home.css'
+import Slider from '../../components/slider/Slider';
 
-export default function 
-Home() { 
-    const center = document.querySelector('.center');
+const center = document.querySelector('.center');
     let width = 200;
     let lastPosition = 0;
     document.onscroll = function(ev) {
@@ -17,14 +16,18 @@ Home() {
     } else {
             document.querySelector('.center').style.position = 'fixed';}
         }
+
+export default function Home() { 
+    
     return (
     <>
-    <section class="container">
-    <div class="center">hola</div>
+    <section className="container">
+    <div className="center">hola</div>
     </section>
-    <section class="container abc">
+    <section className="container abc">
     hola
     </section>
+    <Slider></Slider>
     </>
     ) 
 }
