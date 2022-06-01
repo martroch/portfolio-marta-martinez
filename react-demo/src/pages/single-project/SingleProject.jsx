@@ -2,23 +2,26 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import './single-project.css'
+import { useParams } from 'react-router-dom';
 
 export default function 
-Project() {     
-    const [content, setContent] = useState([]);
+singleProject() {     
+    const [info, setInfo] = useState({});
     
+    const parameters = useParams();
+
     useEffect(() => {
         axios.get('../json/projects.json')
-    .then(response => setContent(response.data));
+            .then(response => {
+                const selectedProject = response.data.find(project => project.id === parameters.id);
+                setInfo(selectedProject)
+            });
     }, [])
-
-    console.log(content)
     
     return (
         <>
         <section>
-        {content.map(info => (<>
-            <section className='b-color'>
+        <section className='b-color'>
                 <h3 key={info.top_name}>{info.top_name}</h3>
                 <h1 key={info.name}>{info.name}</h1>
                 <h3 key={info.sub_name}>{info.sub_name}</h3>
@@ -61,11 +64,5 @@ Project() {
                 <img src={info.img6} alt="" className='img-square'/>
                 <img src={info.img7} alt="" className='img-square'/>
             </div>
-
-
-
-
-
-        </>))}
         </section>
 </>)}

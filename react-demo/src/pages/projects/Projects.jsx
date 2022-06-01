@@ -1,10 +1,13 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 import GetWorks from '../../components/cards/Cards';
 
 export default function 
-Digital() { return (<>
+Projects() { 
+    let params = useParams();
 
-<GetWorks></GetWorks>
-<h1>digital page</h1>
-</>)
+    return (<>
+        <GetWorks category={params.category}></GetWorks>
+        <h1>digital page</h1>
+    </>)
 }

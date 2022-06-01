@@ -6,7 +6,7 @@ export default function
 About() { return (
 <>
     <section className='top-about'>
-        <h1 className='text-top-about' dangerouslySetInnerHTML={{__html:'Now<br>know<br>me better'}}></h1>
+        <h1 className='title-top' dangerouslySetInnerHTML={{__html:'Now<br>know<br>me better'}}></h1>
         <img className='gif-about' src="../images/about-me.gif" alt="" />
         <Rrss></Rrss>
         </section>
