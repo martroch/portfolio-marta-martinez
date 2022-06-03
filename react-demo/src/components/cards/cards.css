@@ -1,0 +1,54 @@
+.header-cards{
+    padding: 0 30%;
+}
+.head-sub-text{
+    font-size: 16px;
+    margin-bottom: var(--space-s);
+}
+.cards{
+    margin: 5% 10%;
+    display: grid;
+    column-gap: var(--space-s);
+    row-gap: var(--space-s);
+    grid-template-columns: 1fr 1fr;
+}
+
+.card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card:hover .content-card{
+opacity: 1;
+}
+
+.card__img{
+    width: 100%;
+}
+.content-card{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 238, 193, 0.7);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--color-black);
+    padding: var(--space-s);
+}
+
+.title-card{
+
+    font-family: 'PP Pangram Sans CompressExtrabold';
+    font-size: 60px;
+    text-align: left;
+}
+.text-card{
+    text-align: right;
+}
+.card-img{
+
+    background-image: var(--bg-image);
+}
+

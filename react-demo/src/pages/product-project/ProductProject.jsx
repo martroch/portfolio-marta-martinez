@@ -1,11 +1,11 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import './single-project.css'
+import './product-project.css'
 import { useParams } from 'react-router-dom';
 
 export default function 
-singleProject() {     
+ProductProject() {     
     const [info, setInfo] = useState({});
     
     const parameters = useParams();
@@ -21,12 +21,13 @@ singleProject() {
     return (
         <>
         <section>
-        <section className='b-color'>
+        <section className='b-blue'>
                 <h3 key={info.top_name}>{info.top_name}</h3>
-                <h1 key={info.name}>{info.name}</h1>
-                <h3 key={info.sub_name}>{info.sub_name}</h3>
+                <h1 key={info.name} >{info.name}</h1>
+                <h3 key={info.sub_name} >{info.sub_name}</h3>
                 <img src={info.img1} alt="" className='top-img'/>
             </section>
+
             <div className='text-info'>
                 <div className='info-1'>
                     <h4>GOALS</h4>
@@ -41,18 +42,13 @@ singleProject() {
                 <img src={info.img2} alt="" className='img-2'/>
                 <div>
                     <h4>TOOLS</h4>
-                    <ul><li>{info.tools}</li></ul>
+                    {info.tools.map(tool => <li key={info.tools}>{ tool }</li>)}
                     <p>{info.work}</p>
                 </div>
             </div>
             <img className='text-info' src={info.img3} alt="" />
             <img className='text-info' src={info.img4} alt="" />
-            <div className='video-project'>
-            <video width={"70%"} autoPlay loop muted controls>  
-            <source src={info.video} type="video/mp4">
-            </source>
-            </video>
-            </div>
+            
             <div className='text-how'>
                 <img src={info.img5} alt="" className='img-square'/>
                 <div className='how'>

@@ -99,7 +99,14 @@ h4{
 --space-xxl: 42px;
 
 }
+.color-black{
+  color: var(--color-black);
+}
 
 .color-white{
   color: var(--color-white);
+}
+
+.center-text{
+  text-align: center;
 }

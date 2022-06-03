@@ -11,6 +11,17 @@
     overflow: hidden;
     width: 300vw;
 }
+.slide__tranlation.position-1 .slide__1 .text-slide{
+    opacity: 1;
+}
+.slide__tranlation.position-1 .slide__1 .img-slide{
+    opacity: 1;
+}
+.slide__tranlation.position-1 .slide__2 .img-slide{
+    opacity: 1;
+}
+
+
 .slide__single{
     display: flex;
     flex-direction: row;

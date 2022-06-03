@@ -1,0 +1,32 @@
+[
+    {
+    
+        "id": "digital",
+        "name": "Digital Design",
+        "category":"digital-design",
+        "top_name":"Design, websites, Landing page, Woocommerce, Wordpress",
+        "sub_name": "UX/UI / HTML / CSS / SCSS / JS / REACT / WORDRPES ",
+        "explanation":"Designs, wordpress and front-end coding. These are a mix of freelance, projects made while working on Portega, and personal projects."
+        },
+
+        {
+    
+            "id": "graphic",
+            "name": "Graphic Design",
+            "category":"graphic-design",
+            "top_name":"Flayers, Brochure, Posters, card,  rrss content",
+            "sub_name": "Photoshop / Illustrator / Indesign / Premier / After Effects / Figma",
+            "explanation":"Graphic design focusing on colors and typography for brochures, flayers, poster... for companies and events."
+            },
+
+    {
+    
+        "id": "product",
+        "name": "Product Design",
+        "category":"product-design",
+        "top_name":"Interior design & product design ",
+        "sub_name": "Rhino zeros / Keyshot / AutoCad",
+        "explanation":"Product design and interior design made through creativity and adapting to the user through its functionality."
+        }
+
+]

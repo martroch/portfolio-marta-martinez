@@ -8,6 +8,5 @@ Projects() {
 
     return (<>
         <GetWorks category={params.category}></GetWorks>
-        <h1>digital page</h1>
     </>)
 }

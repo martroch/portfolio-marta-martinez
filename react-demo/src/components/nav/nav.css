@@ -2,7 +2,7 @@
     z-index: 99;
     font-family: 'PP Pangram Sans NarrowExtrabolItalic';
     font-size: 60px;
-    line-height: 66px;
+    line-height: 60px;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--color-white);
@@ -15,7 +15,7 @@
 }
 
 .contact-section{
-    margin-top: var(--space-xl);
+    margin-top: var(--space-l);
     display: flex;
     flex-direction: column;
     align-items: flex-end;

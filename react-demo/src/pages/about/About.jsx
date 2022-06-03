@@ -7,7 +7,7 @@ About() { return (
 <>
     <section className='top-about'>
         <h1 className='title-top' dangerouslySetInnerHTML={{__html:'Now<br>know<br>me better'}}></h1>
-        <img className='gif-about' src="../images/about-me.gif" alt="" />
+        <img className='gif-about' src="images/about-me.gif" alt="" />
         <Rrss></Rrss>
         </section>
     <section className='content-about'>
@@ -28,9 +28,9 @@ About() { return (
             </div>
             <p className='text-about' dangerouslySetInnerHTML={{__html:"My versatility keeps me awake in the search for new goals, while my empathy makes me a key player in teamwork. I’m a product designer that have focussed his final studies in web design, with 2 years of work experience as a designer and with knowledge in some different design programs.<br><br> I consider myself a proactive and very creative person, continually searching to obtain innovative and different designs that capture the user's attention."}}></p>
         </section>
-        <section>
+        <section className='section-programs'>
             <h3 className='programs'>PROGRAMS I USE</h3>
-            <div className='content-about'>
+            <div className='list-programs'>
                 <ul>
                     <li>UX / UI</li>
                     <li>Figma</li>
@@ -59,6 +59,11 @@ About() { return (
                     <li>After Effects</li>
                     <li>Premier</li>
                 </ul>
+            </div>
+            <div className='btns-projects'>
+                <button className="btn_button">Web projects</button>
+                <button className="btn_button">Product projects</button>
+                <button className="btn_button">Graphic projects</button>
             </div>
         </section>
         </>)

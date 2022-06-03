@@ -19,23 +19,14 @@
     position: fixed;
     top: 0;
     width: 100vw;
-    height: 90vh;
+    height: 93vh;
     top:0;
-    background: var(--color-black);
+    background:linear-gradient(190deg, #1A1D19 75%, rgba(26, 29, 25, 0) 75%);
     right: -120%;
     transition: 850ms;
     z-index: 999;
 }
 
-.nav-menu:after {
-    content: "";
-    width: 100px;
-    height: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    border-top: 230px solid var(--color-black);
-    border-left: 100vw solid white;}
 
 .nav-menu.active{
     right: 0;
