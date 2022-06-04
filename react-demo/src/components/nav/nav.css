@@ -1,18 +1,30 @@
 .menu__item{
     z-index: 99;
     font-family: 'PP Pangram Sans NarrowExtrabolItalic';
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 30px;
+    line-height: 30px;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--color-white);
 }
+@media (min-width: 48em) {
+    .menu__item{
+        font-size: 60px;
+        line-height: 60px;}
+    }
+
 .menu{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-right: 96px;
+    padding-top: 24px;
+    padding-right: 60px;
 }
+@media (min-width: 48em) {
+    .menu{
+        padding-right: 96px;
+        padding-top: 0px;
+    }}
 
 .contact-section{
     margin-top: var(--space-l);
@@ -26,6 +38,9 @@
 
 .contact-text{
     font-family: 'PP Pangram Sans CompressExtrabold';
-    font-size: 36px;
+    font-size: 24px;
 }
-
+@media (min-width: 48em) {
+    .contact-text{
+        font-size: 36px;
+    }}

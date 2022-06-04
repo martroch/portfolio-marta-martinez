@@ -11,7 +11,7 @@ About() { return (
         <Rrss></Rrss>
         </section>
     <section className='content-about'>
-            <div>
+            <div className='content-about-int'>
                 <h2>LANGUAGES</h2>
                 <ul className='list'>
                     <li>English C1</li>
@@ -31,39 +31,43 @@ About() { return (
         <section className='section-programs'>
             <h3 className='programs'>PROGRAMS I USE</h3>
             <div className='list-programs'>
-                <ul>
-                    <li>UX / UI</li>
-                    <li>Figma</li>
-                    <li>Miroo</li>
-                </ul>
-                <ul>
-                    <li>WEB</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SCSS</li>
-                    <li>Js</li>
-                    <li>React</li>
-                    <li>Wordpress</li>
-                </ul>
-                <ul>
-                    <li>PRODUCT</li>
-                    <li>Rhino zeros</li>
-                    <li>AutoCad</li>
-                    <li>Keyshot</li>
-                </ul>
-                <ul>
-                    <li>GRAPHIC</li>
-                    <li>Photoshop</li>
-                    <li>Illustrator</li>
-                    <li>Indesign</li>
-                    <li>After Effects</li>
-                    <li>Premier</li>
-                </ul>
+                <div className='list-intern'>
+                    <ul>
+                        <h4 className='title-programs'><strong>UX / UI</strong></h4>
+                        <li>Figma</li>
+                        <li>Miroo</li>
+                    </ul>
+                    <ul>
+                        <h4 className='title-programs'><strong>WEB</strong></h4>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SCSS</li>
+                        <li>Js</li>
+                        <li>React</li>
+                        <li>Wordpress</li>
+                    </ul>
+                </div>
+                <div className='list-intern'>
+                    <ul>
+                        <h4 className='title-programs'><strong>PRODUCT</strong></h4>
+                        <li>Rhino zeros</li>
+                        <li>AutoCad</li>
+                        <li>Keyshot</li>
+                    </ul>
+                    <ul>
+                        <h4 className='title-programs'><strong>GRAPHIC</strong></h4>
+                        <li>Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>Indesign</li>
+                        <li>After Effects</li>
+                        <li>Premier</li>
+                    </ul>
+                </div>
             </div>
             <div className='btns-projects'>
-                <button className="btn_button">Web projects</button>
-                <button className="btn_button">Product projects</button>
-                <button className="btn_button">Graphic projects</button>
+                <button className="btn_button"><a className='color-white' href="/digital-design">Web projects</a></button>
+                <button className="btn_button"><a className='color-white' href="/product-design">Product projects</a></button>
+                <button className="btn_button"><a className='color-white' href="/graphic-design">Graphic projects</a></button>
             </div>
         </section>
         </>)

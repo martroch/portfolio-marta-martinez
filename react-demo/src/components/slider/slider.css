@@ -1,54 +1,62 @@
 .slide {
-    width: 100vw;
+    max-width: 100vw;
     height: 100vh;
-    background-color:  orange;
     transition: all 0.2s ease-in;
-    overflow: hidden;
+    background-color: var(--color-yellow);
+
 }
 
 .slide__tranlation {
-    display: flex;
-    overflow: hidden;
-    width: 300vw;
+    position: relative;
 }
-.slide__tranlation.position-1 .slide__1 .text-slide{
+.slide__tranlation.position-1 .slide__1{
     opacity: 1;
 }
-.slide__tranlation.position-1 .slide__1 .img-slide{
+.slide__tranlation.position-1 .slide__2  .img-slide-2{
     opacity: 1;
 }
-.slide__tranlation.position-1 .slide__2 .img-slide{
+.slide__tranlation.position-1 .slide__3  .img-slide-3{
     opacity: 1;
+}
+.slide__tranlation.position-1 .slide__2  .text-slide{
+    opacity: 0;
+}
+
+.slide__tranlation.position-1 .slide__3 .text-slide{
+    opacity: 0;
 }
 
 
 .slide__single{
+    position: absolute;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    width: 100vw;
+    justify-content: space-between;
+    max-width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
-.slide-1{
-    background-color: var(--color-yellow);
-}
-.slide-2 {
-    background-color: var(--color-blue);
+/* .slide__1{
 
 }
-.slide-3{
-    background-color: var(--color-pink);
+.slide__2 {
+
+
 }
+.slide__3{
+
+} */
 
 .text-slide{
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    padding: 0 var(--space-xxl);
     gap: var(--space-s);
+    align-items: flex-end;
     text-align: right;
-    width: 30%;
-    font-size: 18px;
+    width: 20%;
+    left: 10%;
 }
 
 .title-slide{
@@ -56,4 +64,31 @@
     font-family: 'PP Pangram Sans CompressExtrabold';
     font-size: 60px;
     line-height: 50px;
+}
+
+.btn-home{
+    color: var(--color-black);
+    border: 2px var(--color-black) solid;
+    border-radius: 25px;
+    padding: var(--space) var(--space-s);
+    background-color: transparent;
+}
+
+.img-slide-1{    
+    position: relative;
+    z-index: 2;
+    right: 20%;
+    transform: scale(0.8) rotateZ(354deg);
+}
+.img-slide-2{
+    position: relative;
+    right: -30px;
+    z-index: 1;
+    transform: scale(0.8) rotateZ(0deg);
+}
+.img-slide-3{
+    position: relative;
+    z-index: 0;
+    right:  -25%;
+    transform: scale(0.8) rotateZ(354deg);
 }

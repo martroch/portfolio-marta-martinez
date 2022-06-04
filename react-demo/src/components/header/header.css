@@ -4,7 +4,12 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 42px;
+    margin: 0 24px;
+}
+@media (min-width: 48em) {
+    .navbar{
+    margin: 24px 42px;
+    }
 }
 .menu-bars{
     margin-left: 2rem;
@@ -12,6 +17,7 @@
     background: none;
 
 }
+    
 
 .nav-menu{ 
     display: flex;
@@ -68,10 +74,14 @@
 .menuBars{
     color: var(--color-white);
     text-decoration: none;
-    font-size: 54px;
+    font-size: 24px;
     font-family: 'Familjen Grotesk';
     font-style: italic;
 }
+@media (min-width: 48em) {
+    .menuBars{
+        font-size: 54px;
+    }}
 .name{
     font-family: 'PP Pangram Sans CompressExtrabold';
     font-size: 24px;
@@ -85,11 +95,15 @@
 }
 .name-menu{
     font-family: 'PP Pangram Sans CompressExtrabold';
-    font-size: 42px;
+    font-size: 30px;
     text-decoration: none;
     color: var(--color-white);
 }
-
+@media (min-width: 48em) {
+    .name-menu{
+        font-size: 42px;
+        
+    }}
 .name:hover{
     font-family: 'PP Pangram Sans NarrowExtrabolItalic';
     font-size: 30px;
