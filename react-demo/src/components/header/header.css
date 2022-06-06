@@ -1,16 +1,16 @@
 .navbar{
+    position: fixed;
     height: 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0 24px;
+    width:100vw;
+    padding: 3% 5%;
+    background-color: var(--color-white);
+    z-index: 999;
 }
-@media (min-width: 48em) {
-    .navbar{
-    margin: 24px 42px;
-    }
-}
+
 .menu-bars{
     margin-left: 2rem;
     font-size: 2rem;

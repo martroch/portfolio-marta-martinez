@@ -42,7 +42,7 @@ DigitalProject() {
                 <img src={info.img2} alt="" className='img-2'/>
                 <div>
                     <h4>TOOLS</h4>
-                    <ul><li>{info.tools}</li></ul>
+                    {/* <ul>{info.tools.map(tool =>(<><li>{tool}</li></>))}</ul> */}
                     <p className='links'><a href={info.link_web} className="color-black">go to website</a><svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.99209 22.6357L8.84836 21.0023L21.1164 12.4121L14.6265 11.2678L14.9738 9.29815L24.8219 11.0346L23.0854 20.8827L21.1158 20.5354L22.2601 14.0455L9.99209 22.6357Z" fill="black"/>
                         </svg>

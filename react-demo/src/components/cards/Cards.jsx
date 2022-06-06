@@ -8,15 +8,13 @@ import './cards.css';
 function GetWorks(props){
     const [cards, setCards] = useState([]);
     const[ designs, setDesigns ] = useState([]);
-    
+
     useEffect(() => {
         axios.get('json/projects.json')
         .then(response => setCards(response.data.filter(element => element.category == props.category)));
         axios.get('json/design.json')
         .then(response => setDesigns(response.data.filter(element => element.category == props.category)));
-    }, [])
-    console.log(cards)
-    console.log(designs)
+    }, [props.category])
     // /1. 
     return (
         <>
@@ -26,7 +24,6 @@ function GetWorks(props){
             <h1 className="center-text">{design.name}</h1>
             <h3 className="center-text head-sub-text">{design.sub_name}</h3>
             <p className="center-text">{design.explanation}</p>
-
         </section>
         </>))}
         <section className="cards">

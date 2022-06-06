@@ -4,15 +4,20 @@
     justify-content: space-between;
     padding: 10%;
     background-color: white;
+    gap: 20px;
 
 }
 
 .footer-text{
     font-family: 'PP Pangram Sans CompressExtrabold';
-    font-size:60px;
+    font-size:36px;
     text-transform: uppercase;
     line-height: 80%;
 }
+@media (min-width: 48em) {
+    .footer-text{
+        font-size:60px;
+    }}
 
 .footer-mail{
     display: flex;
@@ -21,11 +26,17 @@
     align-items: center;
     border-bottom: solid 1px black;
     font-family: 'Familjen Grotesk';
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 400;
     padding-bottom: 12px;
-    
 
+}
+
+@media (min-width: 48em) {
+    .footer-mail{
+        font-size: 30px;
+    
+    }
 }
 .footer-content{
     width: 400px;

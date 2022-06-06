@@ -42,7 +42,10 @@ ProductProject() {
                 <img src={info.img2} alt="" className='img-2'/>
                 <div>
                     <h4>TOOLS</h4>
-                    {info.tools.map(tool => <li key={info.tools}>{ tool }</li>)}
+                    {/* {info.tools.map(tool => (<>
+                        <li>{tool.tools}</li>
+                        </>))
+                        } */}
                     <p>{info.work}</p>
                 </div>
             </div>

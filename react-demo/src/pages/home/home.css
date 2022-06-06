@@ -4,13 +4,14 @@
 }
 
 .container {
-    background: yellow;
     height: 3000px;
+    z-index: -1;
 }
 .center {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     background-image: url('../../../public/images/projects.gif');
+    background-position: center;
     position: fixed;
     left: 0; 
     right: 0;
@@ -18,3 +19,42 @@
     top: 0;
     bottom: 0;
 }
+.title-home{
+    position: fixed;
+    left: 0; 
+    right: 0;
+    margin: auto;
+    top: 17%;
+    bottom: 0;
+    z-index: -1;
+}
+.title-home-1{
+    font-family: 'PP Pangram Sans CompressExtrabold';
+    font-size: 81px;
+    position: fixed;
+    left: 30%; 
+    margin-bottom: 200px;
+}
+
+.title-home-2{
+    font-family: 'PP Pangram Sans CompressExtrabold';
+    font-size: 81px;
+    position: fixed;
+    right: 30%;
+    margin-top: 400px;
+}
+
+.slide-index{
+    z-index: 4;
+}
+
+.typing{
+    font-family: 'PP Pangram Sans NarrowSemibold';
+    font-size: 30px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 0 30% 6% 0;
+    z-index: 1;
+}
+
