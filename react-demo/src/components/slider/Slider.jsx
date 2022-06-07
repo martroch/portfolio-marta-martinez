@@ -15,7 +15,7 @@ export default function Slider() {
             } else {
                 setCounter(counter + 1);
             }
-        }, 3000);
+        }, 5000);
     }, [activeInfo]);
 
     useEffect(() => {
@@ -24,7 +24,7 @@ export default function Slider() {
 
 
     return (<>
-    <div className="slide">
+    <div className={activeInfo.background} id='slider'>
         <div className="slide__tranlation position-1 ">
             <div className='text-slide'>
                 <h2  dangerouslySetInnerHTML={{__html: activeInfo.title}} className="title-slide"></h2>

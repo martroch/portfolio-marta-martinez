@@ -45,13 +45,25 @@ opacity: 1;
 .content-card{
     position: absolute;
     inset: 0;
-    background-color: rgba(255, 238, 193, 0.7);
     opacity: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: var(--color-black);
     padding: var(--space-s);
+}
+
+.yellow{
+    background-color: rgba(255, 238, 193, 0.7);
+
+}
+.blue{
+    background-color: rgba(111, 170, 188, 0.5);
+
+}
+.pink{
+    background-color: rgba(250, 221, 236, 0.7);
+
 }
 
 .title-card{

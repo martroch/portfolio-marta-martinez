@@ -11,7 +11,7 @@ ProductProject() {
     const parameters = useParams();
 
     useEffect(() => {
-        axios.get('../json/projects.json')
+        axios.get('/json/projects.json')
             .then(response => {
                 const selectedProject = response.data.find(project => project.id === parameters.id);
                 setInfo(selectedProject)
@@ -42,10 +42,7 @@ ProductProject() {
                 <img src={info.img2} alt="" className='img-2'/>
                 <div>
                     <h4>TOOLS</h4>
-                    {/* {info.tools.map(tool => (<>
-                        <li>{tool.tools}</li>
-                        </>))
-                        } */}
+                    <ul className='list-tools'>{ info.tools && info.tools.map(tool =>(<><li>{tool}</li></>))}</ul>
                     <p>{info.work}</p>
                 </div>
             </div>

@@ -12,6 +12,8 @@
     height: 300px;
     background-image: url('../../../public/images/projects.gif');
     background-position: center;
+
+    background-repeat: no-repeat;
     position: fixed;
     left: 0; 
     right: 0;
@@ -24,25 +26,41 @@
     left: 0; 
     right: 0;
     margin: auto;
-    top: 17%;
+    top: 15%;
     bottom: 0;
     z-index: -1;
 }
+@media (min-width: 48em) {
+    .title-home{
+        top: 17%;
+    }}
 .title-home-1{
     font-family: 'PP Pangram Sans CompressExtrabold';
-    font-size: 81px;
+    font-size: 60px;
     position: fixed;
-    left: 30%; 
-    margin-bottom: 200px;
+    left: 20px; 
+    margin-top:47px;
 }
+@media (min-width: 48em) {
+    .title-home-1{
+        font-size: 81px;
+        left: 30%; 
+        margin-bottom: 200px;
+    }}
 
 .title-home-2{
     font-family: 'PP Pangram Sans CompressExtrabold';
-    font-size: 81px;
+    font-size: 60px;
     position: fixed;
-    right: 30%;
-    margin-top: 400px;
+    right: 20px;
+    margin-top: 353px;
 }
+@media (min-width: 48em) {
+    .title-home-2{
+        font-size: 81px;
+        right: 30%;
+        margin-top: 400px;
+    }}
 
 .slide-index{
     z-index: 4;
@@ -50,11 +68,56 @@
 
 .typing{
     font-family: 'PP Pangram Sans NarrowSemibold';
+    font-size: 24px;
+    position: fixed;
+    right: 0;
+    margin: 18px 23% 0 0;
+    z-index: 1;
+}
+@media (min-width: 48em) {
+    .typing{
+        font-size: 30px;
+        bottom: 0;
+        margin: 0 30% 6% 0;
+
+    }}
+.rrss-home{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    display: flex;
+    gap: 12px;
+    z-index: -1;
+}
+.discover{
+    font-style: italic;
     font-size: 30px;
+    transform: rotate(270deg);
+    text-transform: uppercase;
+    margin-right: -136px;
+    margin-bottom: 20px;
+    color: var(--color-black);
+
+}
+.discover-arrow{
+    z-index: -1;
+    display: flex;
     position: fixed;
     bottom: 0;
     right: 0;
-    margin: 0 30% 6% 0;
-    z-index: 1;
+    margin-right: var(--space-s);
+    margin-bottom: -41px;
+    transform: scale(0.5);
+}
+@media (min-width: 48em) {
+    .discover-arrow{
+
+        margin-bottom: var(--space-s);
+        transform: scale(1);
+    }}
+.arrow{
+    display: flex;
 }
 

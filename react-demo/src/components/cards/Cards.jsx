@@ -32,7 +32,7 @@ function GetWorks(props){
                 <Link to={`/${props.category}/${card.id}`}>
                     {/* <div style={{'--bg-image':`${card.img1}`}} className="card-img"> */}
                     {/* </div> */}
-                    <div className="content-card">
+                    <div className={card.color + " content-card"}>
                         <h2 className='title-card'>{card.name}</h2>
                         <p className='text-card'>{card.sub_name}</p>
                     </div>
