@@ -9,6 +9,7 @@ import NoMatch from './pages/nomatch/NoMatch'
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import ProductProject from './pages/product-project/ProductProject';
+import GraphicProject from './pages/graphic-project/GraphicProject';
 
 
 // /algo/otracosa
@@ -24,6 +25,7 @@ function App() {
       <Route path='/:category' element={<Projects/>}/>
       <Route path='/digital-design/:id' element={<DigitalProject/>}/>
       <Route path='/product-design/:id' element={<ProductProject/>}/>
+      <Route path='/graphic-design/:id' element={<GraphicProject/>}/>
       <Route path="*" element={<NoMatch />} />
       </Routes>
     </main>

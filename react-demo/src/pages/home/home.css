@@ -39,13 +39,20 @@
     font-size: 60px;
     position: fixed;
     left: 20px; 
-    margin-top:47px;
+    margin-top: 45px;
 }
 @media (min-width: 48em) {
     .title-home-1{
         font-size: 81px;
+        left: 20%; 
+        margin-top: 130px;
+    }}
+
+@media (min-width: 56em) {
+    .title-home-1{
+        font-size: 81px;
         left: 30%; 
-        margin-bottom: 200px;
+        margin-top: 0px;
     }}
 
 .title-home-2{
@@ -53,13 +60,19 @@
     font-size: 60px;
     position: fixed;
     right: 20px;
-    margin-top: 353px;
+    margin-top: 360px;
 }
 @media (min-width: 48em) {
     .title-home-2{
         font-size: 81px;
+        right: 20%;
+        bottom: 0;
+        margin-bottom: 300px;
+    }}
+@media (min-width: 56em) {
+    .title-home-2{
         right: 30%;
-        margin-top: 400px;
+        margin-bottom: 100px;
     }}
 
 .slide-index{
@@ -78,9 +91,19 @@
     .typing{
         font-size: 30px;
         bottom: 0;
-        margin: 0 30% 6% 0;
+        margin: 0 20% 33% 0;
 
     }}
+
+
+    @media (min-width: 56em) {
+        .typing{
+        
+            margin: 0 30% 5% 0;
+    
+        }}
+
+
 .rrss-home{
     position: fixed;
     bottom: 0;

@@ -1,6 +1,6 @@
 
-.b-blue{
-    background-color: var(--color-blue);
+.b-pink{
+    background-color: var(--color-pink);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,10 +9,10 @@
     border-bottom: 130px solid white;
 }
 @media (min-width: 48em) {
-    .b-blue{
+    .b-pink{
         border-bottom: 300px solid white;}
 }
-
-.description{
-    margin: var(--space-m) 0;
+.last-img{
+    max-width: 100%;
+    margin-top: 20px;
 }

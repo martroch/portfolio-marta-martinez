@@ -22,7 +22,18 @@ export default function Slider() {
         setActiveInfo(info[counter]);
     }, [counter]);
 
+    const getClass = (counter, index) => {
+        if (counter == index) {
+            return "slide__1";
+        } else if (counter === index - 1) {
+            return "slide__2";
+        } else if (counter === 2 && index == 0) {
+            return "slide__2";
+        } else {
+            return "slide__3";
+        }
 
+    }
     return (<>
     <div className={activeInfo.background} id='slider'>
         <div className="slide__tranlation position-1 ">
@@ -33,7 +44,7 @@ export default function Slider() {
             </div>
 
             { info.map((slide, index) => <Slide
-                classname={slide.classname + ' slide__' +  (counter + index > info.length ? (counter + index) - info.length : counter + index )}
+                classname={slide.classname + ' ' + getClass(counter, index)}
                 imgTitle={slide.imgTitle}
                 img={slide.img}
             ></Slide>) }
@@ -41,3 +52,21 @@ export default function Slider() {
     </div>
     </>
 )}
+
+// (counter + index >= info.length ? (counter + index) - info.length : counter + index )
+// counter = 0
+// info.length = 3
+
+//  1
+//  2
+//  3
+
+// 3
+// 1
+// 2
+
+// 3
+// 3
+// 1
+
+// (counter + index > info.length ? (counter + index) - info.length : counter + index )

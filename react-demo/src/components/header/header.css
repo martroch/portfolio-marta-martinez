@@ -6,11 +6,17 @@
     justify-content: space-between;
     align-items: center;
     width:100vw;
-    padding: 3% 5%;
+    padding: 3% 9%;
     background-color: var(--color-white);
     z-index: 999;
 }
 
+@media (min-width: 48em) {
+    .navbar{
+        padding: 3% 5%;
+
+    }
+}
 .menu-bars{
     margin-left: 2rem;
     font-size: 2rem;

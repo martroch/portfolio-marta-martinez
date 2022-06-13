@@ -5,7 +5,7 @@ import Typing from './Typing';
 
 export default function Home() { 
     const [ width, setWidth ] = useState(300);
-    useEffect(() => document.onscroll = () => setWidth(width + (window.scrollY / 10)), []);
+    useEffect(() => document.onscroll = () => setWidth(width + (window.scrollY / 20)), []);
     
     return (
     <>

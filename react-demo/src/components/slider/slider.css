@@ -25,7 +25,12 @@
 
 .img-slide {
     transition: all .5s ease;
-    transform: scale(0.8);
+    transform: scale(0.35);
+}
+@media (min-width: 48em) {
+    .img-slide {
+        transform: scale(0.7);
+    }
 }
 
 .slide__tranlation {
@@ -33,14 +38,28 @@
 }
 
 
-
 .slide__single{
     position: absolute;
     display: flex;
     flex-direction: row;
-    top: 0;
+    top: 114px;
     right: 0;
+    left: 0;
+    justify-content: center;
 }
+
+@media (min-width: 48em) {
+    .slide__single{
+        top: 400px;
+        justify-content: flex-end;
+    }}
+@media (min-width: 56em) {
+    .slide__single{
+        top: 0;
+        left: 555px;
+        
+    
+    }}
 
 /* .slide__1{
 
@@ -58,13 +77,31 @@
     display: flex;
     flex-direction: column;
     gap: var(--space-s);
-    align-items: flex-end;
     text-align: right;
-    width: 20%;
-    left: 10%;
-    top:250px
+    align-items: flex-end;
+    width: 100%;
+    left: 0;
+    padding: 50px;
+    top: 16px;
+    
 }
 
+@media (min-width: 48em) {
+    
+    .text-slide {
+    width: 50%;
+    left: 200px;
+    top:150px
+    }}
+
+@media (min-width: 56em) {
+        .text-slide {
+            width: 25%;
+            left: 5%;
+            top:250px
+            }
+    }
+    
 .title-slide{
 
     font-family: 'PP Pangram Sans CompressExtrabold';
@@ -84,17 +121,31 @@
     position: relative;
     z-index: 2;
     right: 50%;
-    transform: scale(0.8) rotateZ(354deg);
+    transform: scale(0.35) rotateZ(354deg);
 }
 .slide__2 .img-slide{
     position: relative;
-    right: -10px;
+    right: 33px;
     z-index: 1;
-    transform: scale(0.8) rotateZ(0deg);
+    transform: scale(0.35) rotateZ(0deg);
 }
 .slide__3 .img-slide{
     position: relative;
     z-index: 0;
     right:  -25%;
-    transform: scale(0.8) rotateZ(354deg);
+    transform: scale(0.35) rotateZ(354deg);
+}
+
+
+@media (min-width: 48em) {
+    .slide__1 .img-slide{
+        transform: scale(0.7) rotateZ(354deg);
+    }
+    .slide__3 .img-slide{
+        right: -100px;
+        transform: scale(0.7) rotateZ(354deg);
+    }
+    .slide__2 .img-slide{
+        transform: scale(0.7) rotateZ(0deg);
+    }
 }
