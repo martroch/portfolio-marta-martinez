@@ -9,9 +9,12 @@ DigitalProject() {
     const [info, setInfo] = useState({});
     
     const parameters = useParams();
-
     useEffect(() => {
-        axios.get('/json/projects.json')
+        window.scrollTo(0, 0)
+    }, [])
+    
+    useEffect(() => {
+        axios.get('../json/projects.json')
             .then(response => {
                 const selectedProject = response.data.find(project => project.id === parameters.id);
                 setInfo(selectedProject)
@@ -25,7 +28,7 @@ DigitalProject() {
                 <h3 key={info.top_name} >{info.top_name}</h3>
                 <h1 key={info.name}>{info.name}</h1>
                 <h3 key={info.sub_name}>{info.sub_name}</h3>
-                <img src={info.img1} alt="" className='top-img'/>
+                <img src={"../" + info.img1} alt="" className='top-img'/>
 
             </section>
             <div className='text-info'>
@@ -39,7 +42,7 @@ DigitalProject() {
                 </div>
             </div>
             <div className='text-info'>
-                <img src={info.img2} alt="" className='img-2'/>
+                <img src={"../" +info.img2} alt="" className='img-2'/>
                 <div>
                     <p className='description' key={info.working}>{info.working}</p>
                     <h4>TOOLS</h4>
@@ -47,10 +50,10 @@ DigitalProject() {
                     <p>{info.work}</p>
                 </div>
             </div>
-            <img className='text-info'src={info.img3} alt="" />
-            <img className='text-info' src={info.img4} alt="" />
-            <img className='text-info' src={info.img5} alt="" />
-            <img className='last-img' src={info.img6} alt="" />
+            <img className='text-info'src={"../" +info.img3} alt="" />
+            <img className='text-info' src={"../" +info.img4} alt="" />
+            <img className='text-info' src={"../" +info.img5} alt="" />
+            <img className='last-img' src={"../" +info.img6} alt="" />
 
         </section>
 </>)}

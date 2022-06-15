@@ -1,4 +1,5 @@
 .slider-yellow{
+    position: relative;
     max-width: 100vw;
     height: 100vh;
     transition: all 0.2s ease-in;
@@ -7,6 +8,7 @@
     overflow: hidden;
 }
 .slider-blue{
+    position: relative;
     max-width: 100vw;
     height: 100vh;
     transition: all 0.2s ease-in;
@@ -15,12 +17,23 @@
     overflow: hidden;
 }
 .slider-pink{
+    position: relative;
     max-width: 100vw;
     height: 100vh;
     transition: all 0.2s ease-in;
     background-color: var(--color-pink);
     z-index: 99;
     overflow: hidden;
+}
+@media (max-width: 375px) {
+    .slider-yellow{height: 110vh;}
+    .slider-blue{height: 110vh;}
+    .slider-pink{height: 110vh;}
+}
+@media (min-width: 48em) {
+    .slider-yellow{height: 110vh;}
+    .slider-blue{height: 110vh;}
+    .slider-pink{height: 110vh;}
 }
 
 .img-slide {
@@ -42,7 +55,7 @@
     position: absolute;
     display: flex;
     flex-direction: row;
-    top: 114px;
+    top: 230px;
     right: 0;
     left: 0;
     justify-content: center;
@@ -55,7 +68,7 @@
     }}
 @media (min-width: 56em) {
     .slide__single{
-        top: 0;
+        top: 20px;
         left: 555px;
         
     
@@ -82,7 +95,7 @@
     width: 100%;
     left: 0;
     padding: 50px;
-    top: 16px;
+    top: 100px;
     
 }
 
@@ -120,19 +133,19 @@
 .slide__1 .img-slide{    
     position: relative;
     z-index: 2;
-    right: 50%;
+    right: 30%;
     transform: scale(0.35) rotateZ(354deg);
 }
 .slide__2 .img-slide{
     position: relative;
-    right: 33px;
+    right: -40px;
     z-index: 1;
     transform: scale(0.35) rotateZ(0deg);
 }
 .slide__3 .img-slide{
     position: relative;
     z-index: 0;
-    right:  -25%;
+    right:  -40%;
     transform: scale(0.35) rotateZ(354deg);
 }
 
@@ -140,6 +153,7 @@
 @media (min-width: 48em) {
     .slide__1 .img-slide{
         transform: scale(0.7) rotateZ(354deg);
+        right: 50%;
     }
     .slide__3 .img-slide{
         right: -100px;
@@ -147,5 +161,16 @@
     }
     .slide__2 .img-slide{
         transform: scale(0.7) rotateZ(0deg);
+        right: 80px;
+    }
+}
+@media (min-width: 1400px) {
+    .slide__1 .img-slide{
+        transform: scale(0.7) rotateZ(354deg);
+        right: 450px;
+    }
+    .slide__2 .img-slide{
+        transform: scale(0.7) rotateZ(0deg);
+        right: 150px;
     }
 }

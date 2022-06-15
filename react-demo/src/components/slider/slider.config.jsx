@@ -5,7 +5,7 @@ export const info = [
         title: "Digital <br> Design",
         imgTitle: "Digital design",
         section: "digital-design",
-        img: "/images/digital-design.jpg",
+        img: "images/digital-design.jpg",
         background:"slider-yellow"
     }, 
     {    
@@ -14,7 +14,7 @@ export const info = [
         title:"Product <br> Design",
         imgTitle :"Product design",
         section:"product-design",
-        img:"/images/product-design.jpg",
+        img:"images/product-design.jpg",
         background:"slider-blue"
     },
     {    
@@ -23,7 +23,7 @@ export const info = [
         title:"Graphic <br> Design",
         imgTitle :"Graphic design",
         section:"graphic-design",
-        img:"/images/graphic-design.jpg",
+        img:"images/graphic-design.jpg",
         background:"slider-pink"
     },
 ];

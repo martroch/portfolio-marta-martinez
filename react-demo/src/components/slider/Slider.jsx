@@ -40,7 +40,7 @@ export default function Slider() {
             <div className='text-slide'>
                 <h2  dangerouslySetInnerHTML={{__html: activeInfo.title}} className="title-slide"></h2>
                 <p>{ activeInfo.text }</p>
-                <button className='btn-home'><a href={'/' + activeInfo.section} className='color-black'>discober the projects</a></button>
+                <button className='btn-home'><a href={activeInfo.section} className='color-black'>discober the projects</a></button>
             </div>
 
             { info.map((slide, index) => <Slide

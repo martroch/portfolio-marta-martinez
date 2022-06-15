@@ -12,7 +12,6 @@
     height: 300px;
     background-image: url('../../../public/images/projects.gif');
     background-position: center;
-
     background-repeat: no-repeat;
     position: fixed;
     left: 0; 
@@ -62,6 +61,14 @@
     right: 20px;
     margin-top: 360px;
 }
+@media (min-width: 375px) {
+    .title-home-2{
+        margin-top: 360px;
+    }}
+@media (min-width: 390px) {
+    .title-home-2{
+        margin-top: 500px;
+    }}
 @media (min-width: 48em) {
     .title-home-2{
         font-size: 81px;
@@ -112,7 +119,7 @@
     margin-bottom: 2%;
     display: flex;
     gap: 12px;
-    z-index: -1;
+    z-index: 2;
 }
 .discover{
     font-style: italic;
@@ -125,7 +132,7 @@
 
 }
 .discover-arrow{
-    z-index: -1;
+    z-index: 2;
     display: flex;
     position: fixed;
     bottom: 0;

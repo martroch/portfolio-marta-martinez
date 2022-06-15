@@ -94,9 +94,20 @@
     text-decoration: none;
     color: var(--color-black);
 }
+.name:hover{
+    font-family: 'PP Pangram Sans NarrowExtrabolItalic';
+    font-size: 18px;
+}
+
 @media (min-width: 48em) {
     .name{
-        font-size: 42px;}
+        font-size: 42px;
+    }
+    .name:hover{
+        font-family: 'PP Pangram Sans NarrowExtrabolItalic';
+        font-size: 30px;
+    }
+    
 
 }
 .name-menu{
@@ -110,10 +121,6 @@
         font-size: 42px;
         
     }}
-.name:hover{
-    font-family: 'PP Pangram Sans NarrowExtrabolItalic';
-    font-size: 30px;
-}
 
 span{
     margin-left: 16px;

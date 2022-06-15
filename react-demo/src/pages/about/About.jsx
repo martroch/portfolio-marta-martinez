@@ -1,10 +1,15 @@
 import React from 'react';
+import { useEffect} from 'react';
 import Rrss from '../../components/rrss/Rrss';
 import './about.css'
 
 export default function 
-About() { return (
-<>
+About() { 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+    
+    return (   <>
     <section className='top-about'>
         <h1 className='title-top' dangerouslySetInnerHTML={{__html:'Now<br>know<br>me better'}}></h1>
         <img className='gif-about' src="images/about-me.gif" alt="" />
@@ -65,9 +70,9 @@ About() { return (
                 </div>
             </div>
             <div className='btns-projects'>
-                <button className="btn_button"><a className='color-white' href="/digital-design">Web projects</a></button>
-                <button className="btn_button"><a className='color-white' href="/product-design">Product projects</a></button>
-                <button className="btn_button"><a className='color-white' href="/graphic-design">Graphic projects</a></button>
+                <button className="btn_button"><a className='color-white' href="digital-design">Web projects</a></button>
+                <button className="btn_button"><a className='color-white' href="product-design">Product projects</a></button>
+                <button className="btn_button"><a className='color-white' href="graphic-design">Graphic projects</a></button>
             </div>
         </section>
         </>)
