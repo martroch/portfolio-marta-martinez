@@ -25,6 +25,7 @@ export default function Home() {
         </div>
 
         <div className='rrss-home'>
+            
                 <a href="https://www.linkedin.com/in/marta-martinez-rocher-5368351a4/"  target="_blank"><img src="images/linkedin-b.svg" alt="" /></a>
                 <a href="https://github.com/martroch"  target="_blank"><img src="images/github-b.svg" alt="" /></a>
                 <a href="https://instagram.com/martamartinezrocher?igshid=YmMyMTA2M2Y="  target="_blank"><img src="images/instagram-b.svg" alt="" /></a>

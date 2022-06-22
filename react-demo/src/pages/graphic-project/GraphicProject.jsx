@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, Route, Routes } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import './graphic-project.css'
@@ -50,10 +51,14 @@ DigitalProject() {
                     <p>{info.work}</p>
                 </div>
             </div>
-            <img className='text-info'src={"../" +info.img3} alt="" />
-            <img className='text-info' src={"../" +info.img4} alt="" />
-            <img className='text-info' src={"../" +info.img5} alt="" />
-            <img className='last-img' src={"../" +info.img6} alt="" />
-
+            { info.img3 &&<img className='text-info'src={"../" +info.img3} alt="" />}
+            { info.img4 &&<img className='text-info' src={"../" +info.img4} alt="" />}
+            { info.img5 &&<img className='text-info' src={"../" +info.img5} alt="" />}
+            { info.img6 &&<img className='last-img' src={"../" +info.img6} alt="" />}
+            <div className='container-links-back'>
+            <div className='border'>
+                <Link className='links-back' to="/graphic-design">Back to graphic project</Link>
+                </div>
+            </div>
         </section>
 </>)}

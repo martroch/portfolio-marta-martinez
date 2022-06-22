@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, Route, Routes } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import './digital-project.css'
@@ -14,7 +15,7 @@ DigitalProject() {
     }, [])
     
     useEffect(() => {
-        axios.get('../../json/projects.json')
+        axios.get('../json/projects.json')
             .then(response => {
                 const selectedProject = response.data.find(project => project.id === parameters.id);
                 setInfo(selectedProject)
@@ -58,8 +59,8 @@ DigitalProject() {
                     </p>}
                 </div>
             </div>
-            <img className='text-info' src={"../" +info.img3} alt="" />
-            <img className='text-info' src={"../" +info.img4} alt="" />
+            { info.img3 &&<img className='text-info' src={"../" +info.img3} alt="" />}
+            { info.img4 &&<img className='text-info' src={"../" +info.img4} alt="" />}
             <div className='video-project'>
             { info.video &&<video width={"70%"} src={"../" +info.video} controls autoPlay loop muted >
             </video>}
@@ -72,8 +73,14 @@ DigitalProject() {
                 </div>
             </div>
             <div className='text-how'>
-                <img src={"../" +info.img6} alt="" className='img-square'/>
-                <img src={"../" +info.img7} alt="" className='img-square'/>
+                { info.img6 && <img src={"../" +info.img6} alt="" className='img-square'></img>}
+                { info.img7 && <img src={"../" +info.img7} alt="" className='img-square'/>}
             </div>
+            <div className='container-links-back'>
+                <div className='border'>
+                    <Link className='links-back' to="/digital-design">Back to digital project</Link>
+                </div>
+            </div>
+            
         </section>
 </>)}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { useEffect} from 'react';
+import { Link, Route, Routes } from 'react-router-dom';
 import Rrss from '../../components/rrss/Rrss';
 import './about.css'
 
@@ -29,7 +30,7 @@ About() {
                     <li>Degree Industrial design engineering - CEU</li>
                     <li>Postgraduate degree in front-end web design and development - ESAT</li>
                 </ul>
-                <img src="../images/marta-martinez.jpg" alt="" />
+                <img src="images/marta-martinez.jpg" alt="" />
             </div>
             <p className='text-about' dangerouslySetInnerHTML={{__html:"My versatility keeps me awake in the search for new goals, while my empathy makes me a key player in teamwork. I’m a product designer that have focussed his final studies in web design, with 2 years of work experience as a designer and with knowledge in some different design programs.<br><br> I consider myself a proactive and very creative person, continually searching to obtain innovative and different designs that capture the user's attention."}}></p>
         </section>
@@ -70,9 +71,18 @@ About() {
                 </div>
             </div>
             <div className='btns-projects'>
-                <button className="btn_button"><a className='color-white' href="digital-design">Web projects</a></button>
-                <button className="btn_button"><a className='color-white' href="product-design">Product projects</a></button>
-                <button className="btn_button"><a className='color-white' href="graphic-design">Graphic projects</a></button>
+                <button className="btn_button">
+                    <Link className='color-white' to="digital-design">Web projects</Link>
+                    {/* <a className='color-white' href="digital-design">Web projects</a> */}
+                </button>
+                <button className="btn_button">
+                    <Link className='color-white' to="product-design">Product projects</Link>
+                    {/* <a className='color-white' href="product-design">Product projects</a> */}
+                </button>
+                <button className="btn_button">
+                    <Link className='color-white' to="graphic-design">Graphic projects</Link>
+                    {/* <a className='color-white' href="graphic-design">Graphic projects</a> */}
+                </button>
             </div>
         </section>
         </>)

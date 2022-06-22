@@ -95,8 +95,9 @@
     color: var(--color-black);
 }
 .name:hover{
-    font-family: 'PP Pangram Sans NarrowExtrabolItalic';
+    font-family: 'PP Pangram Sans CompressExtrabold';
     font-size: 18px;
+    
 }
 
 @media (min-width: 48em) {

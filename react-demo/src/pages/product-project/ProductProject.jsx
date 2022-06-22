@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, Route, Routes } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import './product-project.css'
@@ -45,8 +46,8 @@ ProductProject() {
                     <p>{info.work}</p>
                 </div>
             </div>
-            <img className='text-info' src={"../" +info.img3} alt="" />
-            <img className='text-info' src={"../" +info.img4} alt="" />
+            { info.img3 &&<img className='text-info' src={"../" +info.img3} alt="" />}
+            { info.img4 &&<img className='text-info' src={"../" +info.img4} alt="" />}
             
             <div className='text-how'>
                 <img src={"../"+info.img5} alt="" className='img-square'/>
@@ -56,8 +57,13 @@ ProductProject() {
                 </div>
             </div>
             <div className='text-how'>
-                <img src={"../" +info.img6} alt="" className='img-square'/>
-                <img src={"../" +info.img7} alt="" className='img-square'/>
+            { info.img6 &&<img src={"../" +info.img6} alt="" className='img-square'/>}
+            {info.img7 &&<img src={"../" +info.img7} alt="" className='img-square'/>}
+            </div>
+            <div className='container-links-back'>
+            <div className='border'>
+                <Link className='links-back' to="/product-design">Back to product project</Link>
+            </div>
             </div>
         </section>
 </>)}
