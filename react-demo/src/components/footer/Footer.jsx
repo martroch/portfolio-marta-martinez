@@ -15,7 +15,7 @@ export default function Footer() {
                 </a>
             </div>
             <div className='footer-legal'>
-                <p>© 2022 /Powered by Marta Martínez /all right reserved </p>
+                <p>© 2022 /Powered with React by Marta Martínez /all right reserved </p>
             </div>
         </div>
         </section>

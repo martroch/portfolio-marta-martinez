@@ -72,15 +72,15 @@ About() {
             </div>
             <div className='btns-projects'>
                 <button className="btn_button">
-                    <Link className='color-white' to="digital-design">Web projects</Link>
+                    <Link className='color-white' to="/digital-design">Web projects</Link>
                     {/* <a className='color-white' href="digital-design">Web projects</a> */}
                 </button>
                 <button className="btn_button">
-                    <Link className='color-white' to="product-design">Product projects</Link>
+                    <Link className='color-white' to="/product-design">Product projects</Link>
                     {/* <a className='color-white' href="product-design">Product projects</a> */}
                 </button>
                 <button className="btn_button">
-                    <Link className='color-white' to="graphic-design">Graphic projects</Link>
+                    <Link className='color-white' to="/graphic-design">Graphic projects</Link>
                     {/* <a className='color-white' href="graphic-design">Graphic projects</a> */}
                 </button>
             </div>
